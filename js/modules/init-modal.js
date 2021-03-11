@@ -1,7 +1,7 @@
 export default function initModal() {
   const abrirBtn = document.querySelector("[data-modal='abrir']");
-  const fecharBtn = document.querySelector("[data-modal='fechar'");
-  const modalContainer = document.querySelector("[data-modal='container'");
+  const fecharBtn = document.querySelector("[data-modal='fechar']");
+  const modalContainer = document.querySelector("[data-modal='container']");
   function toggleModal(event) {
     event.preventDefault();
     modalContainer.classList.toggle("ativo");
