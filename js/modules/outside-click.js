@@ -5,8 +5,8 @@ export default function outsideClick(element, events, callback) {
   function handleOutsideClick(e) {
     if (!element.contains(e.target)) {
       element.removeAttribute(outside);
-      events.forEach(() => {
-        html.removeEventListener("click", handleOutsideClick);
+      events.forEach((userEvent) => {
+        html.removeEventListener(userEvent, handleOutsideClick);
       });
       callback();
     }
